@@ -7,7 +7,7 @@ function Intro() {
     const [active, setActive] = useState('')
 
     return (
-        <div className='flex flex-col items-start justify-center pt-4 px-4 lg:pt-20 lg:fixed lg:z-10 lg:top-4'>
+        <div className='flex flex-col items-start justify-center pt-4 px-4 lg:fixed lg:z-10 lg:mt-10 mb-10'>
             {/* Personal info */}
             <Link
                 to='/'
@@ -84,7 +84,7 @@ function Intro() {
             </div>
             
             {/* Social media large decives */}
-            <div className = 'group items-start justify-start w-fit hover:w-full h-16 py-4 cursor-pointer hidden lg:flex mt-48'>
+            <div className = 'group items-start justify-start w-fit hover:w-full h-16 py-4 cursor-pointer hidden lg:flex mt-64'>
                 <div className = 'flex items-center justify-center rounded-full z-50 absolute'>
                     <img 
                         src='/assets/icons/dp-search.svg/' 

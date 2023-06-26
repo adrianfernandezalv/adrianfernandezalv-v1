@@ -6,8 +6,10 @@ export default {
         extend: {
             boxShadow: {
                 'r-shadow': '10px 0px 10px 0px rgba(0,0,0,0.34)',
-                'l-i-shadow': 'inset 10px 0px 5px 0px rgba(0,0,0,0.34)'
+                'l-i-shadow': 'inset 10px 0px 5px 0px rgba(0,0,0,0.34)',
+                'a-form': '3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0,0,0,1), inset -1px -1px 6px rgba(255, 255, 255, 0.4);'
             },
+            
             fontFamily: {
                 inter: ['inter', 'serif']
             },

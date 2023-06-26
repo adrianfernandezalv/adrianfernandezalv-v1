@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useEffect, useState} from 'react'
 
 // Components
@@ -37,7 +38,7 @@ function App() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="currentColor"
+            stroke="white"
             className="w-6 h-6"
         >
             <path
@@ -54,7 +55,7 @@ function App() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="white"
+            stroke="black"
             className="w-6 h-6"
         >
             <path
@@ -71,7 +72,7 @@ function App() {
             <button
                 type='button'
                 onClick={handleThemeSwitch}
-                className='fixed p-2 z-10 lg:right-20 right-4 top-4 bg-lp-text-disabled dark:bg-lp-background-default text-lg rounded-full'
+                className='fixed p-2 z-10 lg:right-20 right-4 top-4 bg-transparent text-lg rounded-full shadow-a-form'
             >
                 {theme == 'dark' ? sun : moon}
             </button>

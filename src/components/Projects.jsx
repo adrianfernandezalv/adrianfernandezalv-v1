@@ -5,19 +5,18 @@ import Title from './Title'
 
 function Projects () {
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col justify-center lg:pl-8 px-4 mb-10'>
             <Title>PROJECTS</Title>
-            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4'>
-                {project.map(project => (
-                    <ProjectItem
-                        key={project.id}
-                        imgUrl={project.imgUrl}
-                        title={project.title}
-                        stack={project.stack}
-                        link={project.link}
-                    />
-                ))}
-            </div>
+            {project.map(project => (
+                <ProjectItem
+                    key={project.id}
+                    imgUrl={project.imgUrl}
+                    title={project.title}
+                    stack={project.stack}
+                    link={project.link}
+                    info={project.info}
+                />
+            ))}
         </div>
     )
 }
