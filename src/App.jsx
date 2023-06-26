@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react'
 
 // Components
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import Intro from './components/Intro'
 import Projects from './components/Projects'
 import Timeline from './components/Timeline'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
@@ -66,24 +66,30 @@ function App() {
     )
 
     return (
-        <>
+        <BrowserRouter>
+            {/* Dark - Light mode switch */}
             <button
                 type='button'
                 onClick={handleThemeSwitch}
-                className='fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-[#fbd38b] text-lg p-1 rounded-md'
+                className='fixed p-2 z-10 lg:right-20 right-4 top-4 bg-lp-text-disabled dark:bg-lp-background-default text-lg rounded-full'
             >
                 {theme == 'dark' ? sun : moon}
             </button>
-            <div className='bg-light-bg dark:bg-dark-bg dark:text-dark-text-1 text-light-text-1 min-h-screen'>
-                <div className='font-inter max-w-5xl w-11/12 mx-auto'>
-                    <Intro/>
-                    <Projects/>
-                    <Timeline/>
-                    <Contact/>
-                    <Footer/>
+            
+            {/* Content */}
+            <div className='min-h-screen dark:bg-dp-background-default dark:text-dp-text-primary bg-lp-background-default text-lp-text-primary'>
+                <div className='flex flex-col lg:flex-row lg:min-h-screen lg:max-w-screen-xl lg:mx-auto font-inter'>
+                    <div className='lg:w-1/2 lg:shadow-r-shadow lg:rounded-lg'>
+                        <Intro/>
+                    </div>
+                    <div className='lg:w-1/2'>
+                        <Timeline/>
+                        <Projects/>
+                        <Contact/>
+                    </div>
                 </div>
             </div>
-        </>
+        </BrowserRouter>
     )
 }
 

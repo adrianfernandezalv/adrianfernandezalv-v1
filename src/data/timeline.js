@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         year: 'MAR — JUN 2023',
         title: 'Full Stack Developer Internship',
         company: 'Asseco Spain',
@@ -9,6 +10,7 @@ export default [
         stack: ['SpringBoot', 'Angular', 'MongoDB', 'Bootstrap']
     },
     {
+        id: 2,
         year: '2021 — 2023',
         title: 'HNC in Web Application Development',
         company: 'UNIR FP',

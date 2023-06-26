@@ -4,19 +4,39 @@ export default {
     darkMode: 'class',
     theme: {
         extend: {
+            boxShadow: {
+                'r-shadow': '10px 0px 10px 0px rgba(0,0,0,0.34)',
+                'l-i-shadow': 'inset 10px 0px 5px 0px rgba(0,0,0,0.34)'
+            },
             fontFamily: {
                 inter: ['inter', 'serif']
             },
             colors: {
-                // Dark Theme
-                'dark-bg': '#202023', // Main background
-                'dark-text-1': '#e2e8f0', // Font color style #1
-                'dark-text-2': '#FFF', // Font color style #2
+                // DARK PALETTE
+                // Tipography
+                'dp-text-primary': '#fff',
+                'dp-text-secondary': 'rgba(255, 255, 255, 0.7)',
+                'dp-text-disabled': 'rgba(255, 255, 255, 0.5)',
+                // Buttons
+                'dp-action-active': '#fff',
+                'dp-action-hover': 'rgba(255, 255, 255, 0.08)',
+                // Background
+                'dp-background-default': '#121212',
+                // Divider
+                'dp-divider': 'rgba(255, 255, 255, 0.12)',
 
-                // Light Theme
-                'light-bg': '#e2e8f0', // Main background
-                'light-text-1': '#202023', // Font color style #1
-                'light-text-2': '', // Font color style #2
+                // LIGHT PALETTE
+                // Tipography
+                'lp-text-primary': 'rgba(0, 0, 0, 0.87)',
+                'lp-text-secondary': 'rgba(0, 0, 0, 0.6)',
+                'lp-text-disabled': 'rgba(0, 0, 0, 0.38)',
+                // Buttons
+                'lp-action-active': 'rgba(0, 0, 0, 0.54)',
+                'lp-action-hover': 'rgba(0, 0, 0, 0.04)',
+                // Background
+                'lp-background-default': '#fff',
+                // Divider
+                'lp-divider': 'rgba(0, 0, 0, 0.12)',
             }
         },
     },

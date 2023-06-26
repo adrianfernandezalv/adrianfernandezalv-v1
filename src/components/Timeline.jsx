@@ -5,12 +5,12 @@ import Title from './Title'
 
 function Timeline () {
     return (
-        <div className='flex flex-col md:flex-row justify-center my-20'>
-            <div className='w-full md:w-7/12'>
+        <div className='flex flex-col md:flex-row justify-center my-20 lg:pl-8'>
+            <div className='w-full px-4 lg:px-0 lg:pr-4'>
                 <Title>EXPERIENCE</Title>
                 {timeline.map(item => (
-                    // eslint-disable-next-line react/jsx-key
                     <TimelineItem
+                        key={item.id}
                         year={item.year}
                         title={item.title}
                         company={item.company}
