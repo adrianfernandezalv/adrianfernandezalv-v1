@@ -51,9 +51,10 @@ function Intro() {
 
             {/* About */}
             <p className='text-sm max-w-lg dark:text-dp-text-secondary text-lp-text-secondary mt-8'>
-            I am a highly creative person with an affinity for exploring diverse fields in both personally 
-            and in my career.<br/><br/> Initially, I found it challenging to define what my ideal profession would be. 
-            However, as a technology enthusiast and diversity advocate, I found that acquiring the knowledge 
+            I am a very creative person who can&apos;t stop having plans and ideas, which leads me to 
+            want to develop my personal and professional skills.<br/><br/> Initially, I found it 
+            challenging to define what my ideal profession would be. 
+            However, as a technology enthusiast, I found that acquiring the knowledge 
             and skills to develop unique and innovative applications was right up my alley!
             </p>
 
