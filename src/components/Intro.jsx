@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import navLinks from '../data/navLinks'
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Intro() {
 
@@ -34,10 +34,10 @@ function Intro() {
                         <li
                             key={link.id}
                         >
-                            <a href={`#${link.id}`} onClick={() => setActive(link.title)} className='group flex items-center py-2 active'>
+                            <Link to={`#${link.id}`} onClick={() => setActive(link.title)} className='group flex items-center py-2 active'>
                                 <span className={`${ active === link.title ? 'dark:bg-dp-text-primary bg-lp-text-primary w-16' : 'dark:bg-dp-text-disabled bg-lp-text-disabled' } mr-4 h-px w-8 transition-all group-hover:w-16 group-hover:bg-lp-text-primary dark:group-hover:bg-dp-text-primary group-focus-visible:w-16 motion-reduce:transition-none`}></span>
                                 <span className={`${ active === link.title ? 'dark:text-dp-text-primary text-lp-text-primary' : 'dark:text-dp-text-disabled text-lp-text-disabled' } text-xs font-bold uppercase tracking-widest group-hover:text-lp-text-primary dark:group-hover:text-dp-text-primary`}>{link.title}</span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

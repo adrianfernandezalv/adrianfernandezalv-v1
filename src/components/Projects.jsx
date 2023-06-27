@@ -5,7 +5,7 @@ import Title from './Title'
 
 function Projects () {
     return (
-        <div className='flex flex-col justify-center lg:pl-8 px-4 mb-10'>
+        <div className='flex flex-col justify-center lg:pl-8 px-4 mb-10' id='projects'>
             <Title>PROJECTS</Title>
             {project.map(project => (
                 <ProjectItem
