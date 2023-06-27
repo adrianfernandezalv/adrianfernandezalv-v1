@@ -4,15 +4,19 @@ export default {
     darkMode: 'class',
     theme: {
         extend: {
+            backgroundImage: {
+                'square-pattern': 'url(\'/assets/background/bg-5.png\')'
+            },
             boxShadow: {
-                'r-shadow': '10px 0px 10px 0px rgba(0,0,0,0.34)',
+                'r-shadow': '12px 0px 12px 0px rgba(0,0,0,0.34)',
                 'l-i-shadow': 'inset 10px 0px 5px 0px rgba(0,0,0,0.34)',
                 'dp-a-form': '3px 3px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0,0,0,1), inset -1px -1px 6px rgba(255, 255, 255, 0.4)',
                 'lp-a-form': '3px 3px 10px rgba(240,240,240,1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(200,200,200,1), inset -1px -1px 6px rgba(255, 255, 255, 0.4)',
             },
             
             fontFamily: {
-                inter: ['inter', 'serif']
+                inter: ['inter', 'serif'],
+                russo: ['Russo One', 'sans-serif'],
             },
             colors: {
                 // DARK PALETTE

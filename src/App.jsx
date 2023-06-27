@@ -80,7 +80,7 @@ function App() {
             {/* Content */}
             <div className='min-h-screen dark:bg-dp-background-default dark:text-dp-text-primary bg-lp-background-default text-lp-text-primary'>
                 <div className='flex flex-col lg:flex-row lg:min-h-screen lg:max-w-screen-xl lg:mx-auto font-inter'>
-                    <div className='lg:w-1/2 lg:shadow-r-shadow lg:rounded-lg'>
+                    <div className='lg:w-1/2 lg:shadow-r-shadow bg-square-pattern bg-contain'>
                         <Intro/>
                     </div>
                     <div className='lg:w-1/2'>

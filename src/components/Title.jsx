@@ -1,11 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Title ({ children, id }) {
+
+    Title.propTypes = {
+        children: PropTypes.array.isRequired,
+        id: PropTypes.array.isRequired
+    }
+
     return (
-        <h1
-            id={id && id}
-            className='text-xl font-bold underline underline-offset-8 decoration-1 mb-5 text-stone-900 dark:text-white'
-        >
+        <h1 id={id && id} className='text-xl font-russo font-bold mb-5 text-lp-text-primary dark:text-dp-text-primary'>
             {children}
         </h1>
     )
