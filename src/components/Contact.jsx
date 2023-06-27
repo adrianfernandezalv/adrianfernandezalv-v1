@@ -15,23 +15,23 @@ function Contact () {
                         type="text" 
                         name='name'
                         placeholder='Name'
-                        className='p-2 text-xs bg-transparent shadow-a-form rounded-md focus:outline-none'
+                        className='p-2 text-xs bg-transparent shadow-lp-a-form dark:shadow-dp-a-form rounded-md focus:outline-none'
                     />
                     <input 
                         type="text" 
                         name='email'
                         placeholder='Email'
-                        className='my-2 p-2 text-xs bg-transparent shadow-a-form rounded-md focus:outline-none'
+                        className='my-2 p-2 text-xs bg-transparent shadow-lp-a-form dark:shadow-dp-a-form rounded-md focus:outline-none'
                     />
                     <textarea 
                         name="message" 
                         placeholder='Message'
                         rows="8"
-                        className='p-2 mb-4 text-xs bg-transparent shadow-a-form rounded-md focus:outline-none resize-none'
+                        className='p-2 mb-4 text-xs bg-transparent shadow-lp-a-form dark:shadow-dp-a-form rounded-md focus:outline-none resize-none'
                     />
                     <button 
                         type='submit'
-                        className='text-center inline-block px-4 py-2 w-max text-xs font-bold rounded-md shadow-a-form text-lp-text-primary dark:text-dp-text-primary hover:scale-110 transition-all'
+                        className='text-center inline-block px-4 py-2 w-max text-xs font-bold rounded-md shadow-lp-a-form dark:shadow-dp-a-form text-lp-text-primary dark:text-dp-text-primary hover:scale-110 transition-all'
                     >
                         Contact me
                     </button>
