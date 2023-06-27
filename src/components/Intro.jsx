@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import navLinks from '../data/navLinks'
 import { HashLink as Link } from 'react-router-hash-link'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function Intro() {
 
-    const [active, setActive] = useState('')
+    const [ active, setActive ] = useState('')
+    const [text] = useTypewriter({
+        words: ['adrian fernandez'],
+        typeSpeed: 100,
+    })
 
     return (
         <div className='flex flex-col items-start justify-center pt-4 px-4 lg:fixed lg:z-10 lg:mt-10 mb-10'>
@@ -17,7 +22,8 @@ function Intro() {
                 }}
             >
                 <h1 className='text-4xl md:text-5xl mb-1 md:mb-2 font-bold dark:text-dp-text-primary text-lp-text-primary font-russo'>
-                    adrian fernandez
+                    <span>{text}</span>
+                    <span><Cursor/></span>
                 </h1>
             </Link>
             <p className='text-base md:text-xl mb-3 font-medium italic dark:text-dp-text-secondary text-lp-text-secondary'>
